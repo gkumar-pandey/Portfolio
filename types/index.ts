@@ -30,6 +30,6 @@ export interface ProjectCardProps {
   description?: string;
   liveLink: string;
   repoLink: string;
-  img: string;
+  img: string | any;
   languages?: string[];
 }
