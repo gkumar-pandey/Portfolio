@@ -2,10 +2,10 @@ import { ProjectCardProps } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
-import { Button } from "../button/button.component";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Button from "../button/button.component";
 
-export const ProjectCard: FC<ProjectCardProps> = ({
+const ProjectCard: FC<ProjectCardProps> = ({
   description,
   img,
   languages,
@@ -57,3 +57,5 @@ export const ProjectCard: FC<ProjectCardProps> = ({
     </div>
   );
 };
+
+export default ProjectCard

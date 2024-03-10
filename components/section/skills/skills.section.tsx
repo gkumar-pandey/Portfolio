@@ -1,6 +1,6 @@
-import { Container } from "@/components";
-import { SectionHeading } from "@/components/sectionheading/sectionheading";
-import { SkillIcon } from "@/components/skillicon/skillicon.component";
+import Container from "@/components/container/container.component";
+import SectionHeading from "@/components/sectionheading/sectionheading";
+import SkillIcon from "@/components/skillicon/skillicon.component";
 import {
   FrontendskillsIcons,
   backendSkillsIcons,
@@ -29,18 +29,19 @@ const SkillIconsComp: FC<SkillIconsCompProps> = ({ skillName, skills }) => {
   </div>
 }
 
-export const SkillSection = () => {
+export default function SkillSection() {
   return (
-    <Container>
-      <section>
+    <section>
+      <Container>
         <SectionHeading>Skills</SectionHeading>
         <div className="grid grid-cols-2 xs:grid-cols-1 " >
-          <SkillIconsComp skillName="Languages" skills={languageSkillIcons}  />
+          <SkillIconsComp skillName="Languages" skills={languageSkillIcons} />
           <SkillIconsComp skillName="Frontend Framework & Libraries" skills={FrontendskillsIcons} />
           <SkillIconsComp skillName="Backend" skills={backendSkillsIcons} />
           <SkillIconsComp skillName="Tools" skills={toolsIcons} />
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
+

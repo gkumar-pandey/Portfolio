@@ -1,7 +1,7 @@
 import Image from "next/image";
 import gautamImage from "@/public/assets/gautam-img.png";
 
-export const ProfileImage = () => {
+const ProfileImage = () => {
   return (
     <>
       <Image
@@ -12,3 +12,5 @@ export const ProfileImage = () => {
     </>
   );
 };
+
+export default ProfileImage;

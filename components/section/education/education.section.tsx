@@ -1,12 +1,12 @@
-import { Container } from "@/components/container/container.component";
-import { SectionHeading } from "@/components/sectionheading/sectionheading";
+import Container from "@/components/container/container.component";
+import SectionHeading from "@/components/sectionheading/sectionheading";
 import graduateIcon from "@/public/icons/graduate.png";
 import Image from "next/image";
 
-export const Education = () => {
+export default function Education() {
   return (
-    <Container>
-      <section>
+    <section>
+      <Container>
         <SectionHeading>
           <p>Education</p>
         </SectionHeading>
@@ -22,8 +22,8 @@ export const Education = () => {
             <p className="text-base font-medium text-[var(--primary-gray)] " >Electrical And Electronics Engineering</p>
           </div>
         </div>
-        <div></div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
+

@@ -1,11 +1,11 @@
-import { Container } from "@/components";
-import { ContactForm } from "@/components/contactform/contactform.component";
-import { ContactLinks } from "@/components/contactlinks/contactlinks.component";
-import { SectionHeading } from "@/components/sectionheading/sectionheading";
+import ContactForm from "@/components/contactform/contactform.component";
+import ContactLinks from "@/components/contactlinks/contactlinks.component";
+import Container from "@/components/container/container.component";
+import SectionHeading from "@/components/sectionheading/sectionheading";
 
-export const ContactSection = () => {
+export default function ContactSection() {
   return (
-    <div>
+    <section>
       <Container>
         <SectionHeading>Contact</SectionHeading>
         <div className="grid grid-cols-2 py-4 xs:grid-cols-1" >
@@ -13,6 +13,7 @@ export const ContactSection = () => {
           <ContactForm />
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
+

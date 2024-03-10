@@ -1,7 +1,7 @@
 import { WorkExperienceProps } from "@/types";
 import { FC } from "react";
 
-export const WorkExperienceCard: FC<WorkExperienceProps> = ({
+const WorkExperienceCard: FC<WorkExperienceProps> = ({
     position,
     company,
     start_date,
@@ -27,3 +27,5 @@ export const WorkExperienceCard: FC<WorkExperienceProps> = ({
         </div>
     );
 };
+
+export default WorkExperienceCard;

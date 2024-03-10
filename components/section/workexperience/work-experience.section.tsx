@@ -1,9 +1,9 @@
-import { Container } from "@/components";
-import { SectionHeading } from "@/components/sectionheading/sectionheading";
-import { WorkExperienceCard } from "@/components/workexperiencecard/work-experience-card.component";
+import Container from "@/components/container/container.component";
+import SectionHeading from "@/components/sectionheading/sectionheading";
+import WorkExperienceCard from "@/components/workexperiencecard/work-experience-card.component";
 import { workExperienceDetailsData } from "@/data/data";
 
-export const WorkExperience = () => {
+export default function WorkExperience() {
   return (
     <section id="work-experience" >
       <Container>
@@ -15,3 +15,4 @@ export const WorkExperience = () => {
     </section>
   );
 };
+

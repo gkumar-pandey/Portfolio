@@ -2,7 +2,7 @@ import { SkillIconProps } from "@/types";
 import Image from "next/image";
 import { FC } from "react";
 
-export const SkillIcon: FC<SkillIconProps> = ({ icon, skill }) => {
+const SkillIcon: FC<SkillIconProps> = ({ icon, skill }) => {
   return (
     <div className="flex flex-col items-center justify-center p-1 ">
       <Image
@@ -16,3 +16,5 @@ export const SkillIcon: FC<SkillIconProps> = ({ icon, skill }) => {
     </div>
   );
 };
+
+export default SkillIcon;

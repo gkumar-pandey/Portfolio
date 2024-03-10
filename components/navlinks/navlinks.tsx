@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export const Navlinks = () => {
+const Navlinks = () => {
   const navlinks = [
     { link: "/about", text: "About" },
     { link: "#work-experience", text: "Experience" },
@@ -19,3 +19,4 @@ export const Navlinks = () => {
     </div>
   );
 };
+export default Navlinks;

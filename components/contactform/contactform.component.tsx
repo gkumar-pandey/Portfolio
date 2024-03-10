@@ -11,7 +11,8 @@ const Input: FC<InputProps> = ({ label, placeholder }) => {
         <input placeholder={placeholder} className=" bg-[var(--secondary-bg-color)] border text-white py-1 px-2 rounded-md" />
     </div>
 }
-export const ContactForm = () => {
+
+const ContactForm = () => {
     return <>
         <div className="w-full" >
             <form className="border py-2 px-4 border-slate-300 rounded-lg" >
@@ -28,3 +29,5 @@ export const ContactForm = () => {
         </div>
     </>
 }
+
+export default ContactForm;

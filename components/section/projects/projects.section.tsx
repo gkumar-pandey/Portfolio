@@ -1,11 +1,11 @@
 "use client"
-import { Container } from "@/components";
-import { ProjectCard } from "@/components/projectcard/projectcard.component";
-import { SectionHeading } from "@/components/sectionheading/sectionheading";
+import Container from "@/components/container/container.component";
+import ProjectCard from "@/components/projectcard/projectcard.component";
+import SectionHeading from "@/components/sectionheading/sectionheading";
 import { projectsData } from "@/data/data";
 import { useState } from "react";
 
-export const ProjectSection = () => {
+export default function ProjectSection() {
   const [projectType, setProjectType] = useState('All');
   const projectTypes = ["All", "Frontend", "Backend", "Full Stack"];
   const handleProjectTabs = (value: string) => {

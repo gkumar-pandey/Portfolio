@@ -1,7 +1,7 @@
 import { ButtonProps } from "@/types";
 import { FC } from "react";
 
-export const Button: FC<ButtonProps> = ({
+const Button: FC<ButtonProps> = ({
   children,
   variant,
   leftIcon,
@@ -17,7 +17,7 @@ export const Button: FC<ButtonProps> = ({
 
   if (variant === "outlined") {
     return (
-    <button className="px-3 py-1 rounded-md border border-white text-white font-medium flex items-center flex-row gap-2 hover:text-[var(--primary-bg-color)] hover:bg-white">
+      <button className="px-3 py-1 rounded-md border border-white text-white font-medium flex items-center flex-row gap-2 hover:text-[var(--primary-bg-color)] hover:bg-white">
         {leftIcon}
         {children}
         {rightIcon}
@@ -25,3 +25,5 @@ export const Button: FC<ButtonProps> = ({
     );
   }
 };
+
+export default Button;
