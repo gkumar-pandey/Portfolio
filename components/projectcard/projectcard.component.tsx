@@ -42,12 +42,12 @@ const ProjectCard: FC<ProjectCardProps> = ({
           </div>
         </div>
         <div className="flex items-center gap-4  py-2">
-          <Link href={repoLink}>
+          <Link target="_blank" href={repoLink}>
             <Button variant={'outlined'} rightIcon={<FaGithub />} >
               Source
             </Button>
           </Link>
-          <Link href={liveLink}>
+          <Link target="_blank" href={liveLink}>
             <Button variant={"solid"} rightIcon={<FaExternalLinkAlt />}>
               Live
             </Button>

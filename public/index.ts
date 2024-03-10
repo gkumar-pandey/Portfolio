@@ -34,6 +34,7 @@ import {
   vscode,
 } from "./skills-icons";
 export * from "./icons";
+export * from "./assets";
 
 export {
   css,

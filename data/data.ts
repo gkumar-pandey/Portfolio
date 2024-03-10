@@ -10,9 +10,11 @@ import {
   chartjs,
   cpp,
   css,
+  dictionaryImg,
   express,
   figma,
   firebase,
+  fitmeImg,
   framermotion,
   git,
   github,
@@ -241,6 +243,36 @@ export const projectsData = [
       "react-icons",
       "ChakraUI",
     ],
+  },
+  {
+    title: "Fit-Me",
+    type: "full stack",
+    description:
+      "Feature-rich fitness app designed to help you achieve your health goals with features like exercise, goal tracking, etc.",
+    img: fitmeImg,
+    liveLink: "https://fit-me-fitness-management.vercel.app/",
+    repoLink: "https://github.com/gkumar-pandey/Fit-me-fitness-management",
+    languages: [
+      "react",
+      "react-router",
+      "axios",
+      "redux-toolkit",
+      "nodejs",
+      "mongodb",
+      "express",
+      "react-icons",
+      "ChakraUI",
+    ],
+  },
+  {
+    title: "Dictionary App",
+    type: "frontend",
+    description:
+      "A English dictionary web application where user search the words and he will get the meaning of that word also synonyms and antonyms of that word and audio pronunciation of word.",
+    img: dictionaryImg,
+    liveLink: "https://dictonary-app.vercel.app/",
+    repoLink: "https://github.com/gkumar-pandey/Dictonary-app",
+    languages: ["react", "react-router", "axios", "api", "tailwind"],
   },
 ];
 

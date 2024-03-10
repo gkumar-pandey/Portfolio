@@ -23,7 +23,7 @@ const ContactForm = () => {
                     <textarea className="bg-[var(--secondary-bg-color)] border text-white py-1 px-2 rounded-md" placeholder="Message.." cols={30} ></textarea>
                 </div>
                 <div className="py-3 flex my-1 items-center flex-row justify-end " >
-                    <button className="px-3 rounded-md py-1 font-medium text-lg bg-white text-gray-900" type="submit" >Submit</button>
+                    <button className="px-3 w-full rounded-md py-1 font-medium text-lg bg-white text-gray-900" type="submit" >Submit</button>
                 </div>
             </form>
         </div>
