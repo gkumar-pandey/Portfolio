@@ -4,46 +4,41 @@ import { SkillIcon } from "@/components/skillicon/skillicon.component";
 import {
   FrontendskillsIcons,
   backendSkillsIcons,
+  languageSkillIcons,
   toolsIcons,
 } from "@/data/data";
-import Image from "next/image";
+import { FC } from "react";
+
+interface SkillIconsCompProps {
+  skillName: string;
+  skills: { skill: string, icon: any }[];
+}
+
+const SkillIconsComp: FC<SkillIconsCompProps> = ({ skillName, skills }) => {
+  return <div>
+    <div className="py-1">
+      <h2 className="text-lg font-semibold text-[var(--primary-gray)] ">
+        {skillName}
+      </h2>
+      <div className="flex gap-1 flex-wrap ">
+        {skills.map((ele, idx) => (
+          <SkillIcon {...ele} key={idx} />
+        ))}
+      </div>
+    </div>
+  </div>
+}
 
 export const SkillSection = () => {
   return (
     <Container>
       <section>
         <SectionHeading>Skills</SectionHeading>
-        <div>
-          <div className="py-1">
-            <h2 className="text-lg font-semibold text-[var(--primary-gray)] ">
-              Frontend
-            </h2>
-            <div className="flex gap-1">
-              {FrontendskillsIcons.map((ele, idx) => (
-                <SkillIcon {...ele} key={idx} />
-              ))}
-            </div>
-          </div>
-        </div>
-        <div>
-          <h2 className="text-lg font-semibold text-[var(--primary-gray)] ">
-            Backend
-          </h2>
-          <div className="flex gap-1">
-            {backendSkillsIcons.map((ele, idx) => (
-              <SkillIcon key={idx} {...ele} />
-            ))}
-          </div>
-        </div>
-        <div>
-          <h2 className="text-lg font-semibold text-[var(--primary-gray)] ">
-            Tools
-          </h2>
-          <div className="flex gap-1" >
-            {toolsIcons.map((ele, idx) => (
-              <SkillIcon {...ele} key={idx} />
-            ))}
-          </div>
+        <div className="grid grid-cols-2 xs:grid-cols-1 " >
+          <SkillIconsComp skillName="Languages" skills={languageSkillIcons}  />
+          <SkillIconsComp skillName="Frontend Framework & Libraries" skills={FrontendskillsIcons} />
+          <SkillIconsComp skillName="Backend" skills={backendSkillsIcons} />
+          <SkillIconsComp skillName="Tools" skills={toolsIcons} />
         </div>
       </section>
     </Container>

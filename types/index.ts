@@ -33,3 +33,12 @@ export interface ProjectCardProps {
   img: string | any;
   languages?: string[];
 }
+
+// work experience props interface
+export interface WorkExperienceProps {
+  position:string;
+  start_date:string;
+  end_date:string;
+  company:string;
+  descriptions:string[];
+}

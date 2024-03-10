@@ -1,4 +1,4 @@
-import { Container } from "@/components";
+import { Container } from "@/components/container/container.component";
 import { SectionHeading } from "@/components/sectionheading/sectionheading";
 import graduateIcon from "@/public/icons/graduate.png";
 import Image from "next/image";
@@ -10,7 +10,7 @@ export const Education = () => {
         <SectionHeading>
           <p>Education</p>
         </SectionHeading>
-        <div className="flex flex-row gap-4 py-4 " >
+        <div className="flex flex-row gap-4 py-1" >
           <Image
             className="w-10 h-10 rounded-full border border-slate-500 "
             src={graduateIcon}

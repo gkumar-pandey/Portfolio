@@ -4,7 +4,7 @@ import { Navlinks } from "../navlinks/navlinks";
 
 export const Navbar = () => {
   return (
-    <nav className="p-2 z-10 sticky top-0  bg-[var(--primary-bg-color)] text-[var(--white)] shadow-md  ">
+    <nav className="p-2 z-10 sticky top-0 bg-opacity-10 backdrop-filter backdrop-blur-md text-[var(--white)] shadow-md  ">
       <Container>
         <div className="flex items-center justify-between" >
           <Logo />
@@ -14,3 +14,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+
