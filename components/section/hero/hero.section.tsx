@@ -6,6 +6,7 @@ import Container from "@/components/container/container.component";
 import Button from "@/components/button/button.component";
 import ProfileImage from "@/components/profileimage/profile-image.component";
 import HeroLeft from "@/components/heroleft/hero-left.component";
+import AboutMe from "@/components/aboutme/about-me.component";
 
 
 
@@ -27,19 +28,7 @@ export default function HeroSection() {
                             <ProfileImage />
                             <HeroLeft />
                         </div>
-                        <div className="text-lg text-[var(--primary-gray)] font-normal  w-2/3 xs:w-full text-start md:w-full">
-                            <p className="py-1">
-                                If this HTML renders correctly, I am a fairly good developer and
-                                problem solver.
-                            </p>
-                            <p className=" text-wrap  ">
-                                I&apos;m Gautam a EEE undergrad who is interested in Web development
-                                and Competetive Programming. i have a passion for creating
-                                beautiful web applications. I share my learnings through
-                                speaking engagements & write-ups. i also identify myself as an
-                                Open-Source advocate
-                            </p>
-                        </div>
+                        <AboutMe />
                         <div className=" my-3 flex flex-row items-center gap-3">
                             {socialLinks.map((ele, idx) => (
                                 <Link key={idx} target="_blank" href={ele.link}>

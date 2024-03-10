@@ -27,9 +27,13 @@ import {
   html,
   md,
   py,
-  chakraui,chartjs,framermotion,mongoose,
+  chakraui,
+  chartjs,
+  framermotion,
+  mongoose,
   vscode,
 } from "./skills-icons";
+export * from "./icons";
 
 export {
   css,
@@ -61,5 +65,8 @@ export {
   md,
   py,
   vscode,
-chakraui,chartjs,framermotion,mongoose
+  chakraui,
+  chartjs,
+  framermotion,
+  mongoose,
 };

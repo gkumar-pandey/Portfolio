@@ -15,7 +15,7 @@ const Input: FC<InputProps> = ({ label, placeholder }) => {
 const ContactForm = () => {
     return <>
         <div className="w-full" >
-            <form className="border py-2 px-4 border-slate-300 rounded-lg" >
+            <form className="border shadow-md py-2 px-4 border-[#3f3f4666] rounded-lg" >
                 <Input label={'Your Name'} placeholder="Name" />
                 <Input label="Your Email" placeholder="Email" />
                 <div className="flex flex-col " >

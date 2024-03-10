@@ -36,9 +36,9 @@ export interface ProjectCardProps {
 
 // work experience props interface
 export interface WorkExperienceProps {
-  position:string;
-  start_date:string;
-  end_date:string;
-  company:string;
-  descriptions:string[];
+  position: string;
+  start_date: string;
+  end_date: string;
+  company: string;
+  descriptions: string[];
 }

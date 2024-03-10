@@ -7,6 +7,7 @@ import {
   languageSkillIcons,
   toolsIcons,
 } from "@/data/data";
+import { skillHeadingIcon } from "@/public";
 import { FC } from "react";
 
 interface SkillIconsCompProps {
@@ -33,7 +34,7 @@ export default function SkillSection() {
   return (
     <section>
       <Container>
-        <SectionHeading>Skills</SectionHeading>
+        <SectionHeading >Skills</SectionHeading>
         <div className="grid grid-cols-2 xs:grid-cols-1 " >
           <SkillIconsComp skillName="Languages" skills={languageSkillIcons} />
           <SkillIconsComp skillName="Frontend Framework & Libraries" skills={FrontendskillsIcons} />
