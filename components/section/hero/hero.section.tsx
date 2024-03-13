@@ -39,8 +39,13 @@ export default function HeroSection() {
                             ))}
                         </div>
                         <div className="py-4 flex items-center gap-4 ">
-                            <Button variant={"outlined"}>Get In Touch</Button>
-                            <Button variant={"solid"}>Resume</Button>
+                            <Link href={"#contact"} >
+                                <Button variant={"outlined"}>Get In Touch</Button>
+                            </Link>
+
+                            <Link target="_blank" href={"https://drive.google.com/file/d/1eTclg7skHClwEJarBVCRpeL5hUejbwi4/view?usp=sharing"} >
+                                <Button variant={"solid"}>Resume</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -5,7 +5,7 @@ import SectionHeading from "@/components/sectionheading/sectionheading";
 
 export default function ContactSection() {
   return (
-    <section className="py-2" >
+    <section id="contact" className="py-2" >
       <Container>
         <SectionHeading>Contact</SectionHeading>
         <div className="grid grid-cols-2  xs:grid-cols-1" >
