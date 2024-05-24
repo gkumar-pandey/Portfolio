@@ -280,7 +280,8 @@ export const projectsData = [
 export const workExperienceDetailsData = [
   {
     position: "Frontend Developer",
-    company: "Freelancer",
+    company: "ZippyCrowd",
+    mode:"Remote",
     start_date: "03/2023",
     end_date: "05/2023",
     descriptions: [

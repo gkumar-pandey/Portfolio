@@ -26,7 +26,9 @@ const ProjectCard: FC<ProjectCardProps> = ({
       </>
       <div className="px-2 flex flex-col justify-between flex-1 ">
         <div>
-          <h2 className="text-xl py-2 text-start text-white font-semibold">{title}</h2>
+          <h2 className="text-xl py-2 text-start text-white font-semibold">
+            {title}
+          </h2>
           <p className="text-start font-normal text-[var(--primary-gray)] line-clamp-3">
             {description}
           </p>
@@ -43,7 +45,7 @@ const ProjectCard: FC<ProjectCardProps> = ({
         </div>
         <div className="flex items-center gap-4  py-2">
           <Link target="_blank" href={repoLink}>
-            <Button variant={'outlined'} rightIcon={<FaGithub />} >
+            <Button variant={"outlined"} rightIcon={<FaGithub />}>
               Source
             </Button>
           </Link>
@@ -58,4 +60,4 @@ const ProjectCard: FC<ProjectCardProps> = ({
   );
 };
 
-export default ProjectCard
+export default ProjectCard;

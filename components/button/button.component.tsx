@@ -10,7 +10,8 @@ const Button: FC<ButtonProps> = ({
   if (variant === "solid") {
     return (
       <button className="py-1 rounded-md px-3 bg-white text-[var(--primary-bg-color)] cursor-pointer  font-medium flex flex-row gap-2 items-center">
-        {children}{rightIcon}
+        {children}
+        {rightIcon}
       </button>
     );
   }

@@ -6,7 +6,6 @@ import ProjectSection from "@/components/section/projects/projects.section";
 import SkillSection from "@/components/section/skills/skills.section";
 import WorkExperience from "@/components/section/workexperience/work-experience.section";
 
-
 export default function Home() {
   return (
     <main className="min-h-screen ">

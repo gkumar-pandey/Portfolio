@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Drawer from "../drawer/drawer.component";
 
 const Navlinks = () => {
   const navlinks = [
@@ -10,9 +11,13 @@ const Navlinks = () => {
   ];
   return (
     <div>
-      <div className="flex items-center gap-3 font-medium " >
+      <div className="flex items-center gap-3 font-medium xs:hidden ">
         {navlinks.map((ele, idx) => (
-          <Link className="hover:text-[var(--primary-color)] " href={ele?.link} key={idx}>
+          <Link
+            className="hover:text-[var(--primary-color)] "
+            href={ele?.link}
+            key={idx}
+          >
             {ele?.text}
           </Link>
         ))}
