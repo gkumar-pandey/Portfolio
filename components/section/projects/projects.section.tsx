@@ -1,8 +1,10 @@
 "use client";
+import Button from "@/components/button/button.component";
 import Container from "@/components/container/container.component";
 import ProjectCard from "@/components/projectcard/projectcard.component";
 import SectionHeading from "@/components/sectionheading/sectionheading";
 import { projectsData } from "@/data/data";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ProjectSection() {
@@ -49,6 +51,11 @@ export default function ProjectSection() {
           </div>
         ))}
       </div>
+      {/* <div className="flex flex-row justify-center">
+        <Link href={"/projects"}>
+          <Button variant="solid">View More Projects</Button>
+        </Link>
+      </div> */}
     </Container>
   );
 }

@@ -32,6 +32,7 @@ import {
   react,
   reactRouter,
   redux,
+  restCountriesImg,
   sql,
   tailwind,
   ts,
@@ -274,6 +275,23 @@ export const projectsData = [
     repoLink: "https://github.com/gkumar-pandey/Dictonary-app",
     languages: ["react", "react-router", "axios", "api", "tailwind"],
   },
+  {
+    title: "Rest Countries",
+    type: "frontend",
+    description:
+      "Made with React and Material-UI, uses REST Countries API to display various country details with theme switcher, search and filter by region options.",
+    img: restCountriesImg,
+    liveLink: "https://rest-countries-eight-gamma.vercel.app/",
+    repoLink: "https://github.com/gkumar-pandey/Rest-Countries",
+    languages: [
+      "React",
+      "JavaScript",
+      "MaterialUI",
+      "react-router",
+      "axios",
+      "api",
+    ],
+  },
 ];
 
 // work experience details
@@ -281,7 +299,7 @@ export const workExperienceDetailsData = [
   {
     position: "Frontend Developer",
     company: "ZippyCrowd",
-    mode:"Remote",
+    mode: "Remote",
     start_date: "03/2023",
     end_date: "05/2023",
     descriptions: [
