@@ -27,11 +27,15 @@ import md from "./md.svg";
 import figma from "./figma.svg";
 import vscode from "./vscode.svg";
 import gitlab from "./gitlab.svg";
-import framermotion from './framer-motion.svg'
-import chakraui from './chakra-ui.png'
-import chartjs from './chartjs.ico'
-import mongoose from './mongoose.svg'
-
+import framermotion from "./framer-motion.svg";
+import chakraui from "./chakra-ui.png";
+import chartjs from "./chartjs.ico";
+import mongoose from "./mongoose.svg";
+import go from "./go.svg";
+import prisma from "./prisma.svg";
+import java from "./java.svg";
+import androidstudio from "./adroidstudio.svg";
+import redish from "./redish.svg";
 
 export {
   css,
@@ -66,5 +70,10 @@ export {
   framermotion,
   chakraui,
   chartjs,
-  mongoose
+  mongoose,
+  prisma,
+  go,
+  redish,
+  java,
+  androidstudio,
 };

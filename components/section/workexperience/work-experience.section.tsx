@@ -6,7 +6,7 @@ import { workHeadingIcon } from "@/public";
 
 export default function WorkExperience() {
   return (
-    <section id="work-experience" >
+    <section id="work-experience">
       <Container>
         <SectionHeading>Work Experience</SectionHeading>
         {workExperienceDetailsData.map((ele, idx) => (
@@ -15,5 +15,4 @@ export default function WorkExperience() {
       </Container>
     </section>
   );
-};
-
+}

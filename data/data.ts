@@ -40,6 +40,7 @@ import {
   vite,
   vscode,
 } from "@/public";
+import { go, java, prisma, redish } from "@/public/skills-icons";
 
 export const languageSkillIcons = [
   { skill: "Typescript", icon: ts },
@@ -63,6 +64,14 @@ export const languageSkillIcons = [
   {
     skill: "C",
     icon: c,
+  },
+  {
+    skill: "Java",
+    icon: java,
+  },
+  {
+    skill: "Golang",
+    icon: go,
   },
 ];
 export const FrontendskillsIcons = [
@@ -116,6 +125,8 @@ export const backendSkillsIcons = [
   { skill: "Firebase", icon: firebase },
   { skill: "MySql", icon: sql },
   { skill: "Mongoose", icon: mongoose },
+  { skill: "Prisma", icon: prisma },
+  { skill: "Redish", icon: redish },
 ];
 
 export const toolsIcons = [
@@ -300,11 +311,26 @@ export const workExperienceDetailsData = [
     position: "Frontend Developer",
     company: "ZippyCrowd",
     mode: "Remote",
+    logo: "https://res.cloudinary.com/dlykup1dh/image/upload/v1721357456/Portfolio/BPprjXNQ_400x400_asyp37.jpg",
     start_date: "03/2023",
     end_date: "05/2023",
     descriptions: [
       "Developed the official website of Zippy Crowd using Next.js, TypeScript, and Tailwind CSS",
       "Implemented responsive design and optimized performance for a seamless user experience.",
+    ],
+  },
+  {
+    position: "Full Stack Developer",
+    company: "Brihat Infotech",
+    logo: "https://res.cloudinary.com/dlykup1dh/image/upload/v1721357080/Portfolio/brihat_infotech_logo_onzt3q.jpg",
+    mode: "Remote",
+    start_date: "04/2024",
+    end_date: "07/2024",
+    descriptions: [
+      "Developed a Hostel Management Admin Portal using NextJs,Tailwind,Redux for Frontend and Nodejs,Express and MongoDB for Backend",
+      "Implemented responsive design and optimized performance for a seamless user experience.",
+      "student & Staff Mangement, Canteen Management, and OTP based Authentication Registration features created.",
+      "Used SSE for push Notifications to admin about students and staffs activity.",
     ],
   },
 ];

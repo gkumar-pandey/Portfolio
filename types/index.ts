@@ -41,4 +41,5 @@ export interface WorkExperienceProps {
   end_date: string;
   company: string;
   descriptions: string[];
+  logo: any;
 }
